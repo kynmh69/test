@@ -16,5 +16,4 @@ if __name__ == "__main__":
     data_sec = authd_client.intraday_time_series('activities/heart', DATE, detail_level='1min', start_time=start_time, end_time=end_time) #'1sec', '1min', or '15min'
     heart_sec = data_sec["activities-heart-intraday"]["dataset"]
     heart_sec[:10]
-    for h in heart_sec:
-        print(h)
+    print(heart_sec)
